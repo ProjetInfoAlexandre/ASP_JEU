@@ -26,5 +26,12 @@ namespace ASPJEU.Controllers
 
             return View();
         }
+
+        public ActionResult Test()
+        {
+            ViewBag.Message = "test";
+
+            return View();
+        }
     }
 }
