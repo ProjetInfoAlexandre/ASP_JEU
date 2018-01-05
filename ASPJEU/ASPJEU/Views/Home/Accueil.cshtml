@@ -1,7 +1,67 @@
 ﻿@{
     ViewBag.Title = "Test";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Ceci est une arnaque <p>
+<script type="text/javascript">
+
+    function connexionClick() {
+        var box_pseudo = document.getElementById('c_pseudo');
+        var box_password = document.getElementById('c_password');
+
+        if (box_pseudo.value == "") {
+            box_pseudo.style = "margin-top: 2%; height: 6%; border-color: red;";
+        }
+
+        if (box_password.value == "") {
+            box_password.style = "margin-top: 2%; height: 6%; border-color: red;";
+        }
+    }
+
+    function inscriptionClick() {
+        var box_pseudo = document.getElementById('i_pseudo');
+        var box_password1 = document.getElementById('i_password1');
+        var box_password2 = document.getElementById('i_password2');
+
+        if (box_pseudo.value == "") {
+            box_pseudo.style = "margin-top: 2%; height: 6%; border-color: red;";
+        }
+
+        if (box_password1.value == "") {
+            box_password1.style = "margin-top: 2%; height: 6%; border-color: red;";
+        }
+
+        if (box_password2.value == "") {
+            box_password2.style = "margin-top: 2%; height: 6%; border-color: red;";
+        }
+    }
+
+    function resetBorders(text_box) {
+        //je sais pas ça optimise vraiment
+        if (text_box.style != "margin-top: 2%; height: 6%;") text_box.style = "margin-top: 2%; height: 6%;";
+    }
+
+</script>
+
+<div class="row">
+    <div class="col-md-6 text-center">
+        <h1 style="margin-top: 20%; height: 10%;">Connexion</h1>
+
+        <input type="text" placeholder="Pseudonyme" id="c_pseudo" onclick="resetBorders(this)" class="col-md-6 col-md-offset-3" style="margin-top: 2%; height: 6%;" />
+
+        <input type="password" placeholder="Password" id="c_password" onclick="resetBorders(this)" class="col-md-6 col-md-offset-3" style="margin-top: 2%; height: 6%;" />
+
+        <input type="button" value="Connexion" class="col-md-6 col-md-offset-3" onclick="connexionClick()" style="margin-top: 8%; height: 6%; border: solid; border-width: 1px; border-radius: 4px;" />
+    </div>
+
+    <div class="col-md-6 text-center">
+        <h1 style="margin-top: 20%; height: 10%;">Inscription</h1>
+
+        <input type="text" placeholder="Pseudonyme" id="i_pseudo" onclick="resetBorders(this)" class="col-md-6 col-md-offset-3" style="margin-top: 2%; height: 6%;" />
+
+        <input type="password" placeholder="Password" id="i_password1" onclick="resetBorders(this)" class="col-md-6 col-md-offset-3" style="margin-top: 2%; height: 6%;" />
+
+        <input type="password" placeholder="Password" id="i_password2" onclick="resetBorders(this)" class="col-md-6 col-md-offset-3" style="margin-top: 2%; height: 6%;" />
+
+        <input type="button" value="Inscription" onclick="inscriptionClick()" class="col-md-6 col-md-offset-3" style="margin-top: 2%; height: 6%; border: solid; border-width: 1px; border-radius: 4px;" />
+    </div>
+</div>
