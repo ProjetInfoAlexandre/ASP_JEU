@@ -31,12 +31,38 @@ textarea {
 
 }
 
+.vaisseau1 {
+    height: 200px;
+}
+
+.vaisseau1Cell {
+    top: 50%;
+    position: relative;
+}
+
+.contVaisseaux {
+    background-color: #333bc3;
+}
+
+.vaisseau1CellIMG {
+    transform: translateY(-40px);
+}
+
 .navigationCell {
-    width: 25%;
+    float: left;
     text-align: center;
+    width: 25%;
 }
 
 h1 {
     text-align: center;
     margin-bottom: 60px;
-}s
+}
+
+.navigationUL {
+    width: 100%;
+}
+
+.partiePrincipale {
+    width: 80%;
+}
