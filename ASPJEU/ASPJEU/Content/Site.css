@@ -41,7 +41,11 @@ textarea {
 }
 
 .contVaisseaux {
-    background-color: #333bc3;
+    margin-top: 25px;
+    background-color: #808080;
+    border: solid 5px;
+    border-color: #4800ff;
+    border-radius: 25px;
 }
 
 .vaisseau1CellIMG {

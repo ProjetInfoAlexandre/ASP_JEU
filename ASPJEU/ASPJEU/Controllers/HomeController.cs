@@ -15,21 +15,21 @@ namespace ASPJEU.Controllers
 
         public ActionResult Vaisseaux()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "La page d'achat des vaisseaux.";
 
             return View();
         }
 
         public ActionResult Batiments()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "La page d'achat des bâtiments";
 
             return View();
         }
 
         public ActionResult Wiki()
         {
-            ViewBag.Message = "test";
+            ViewBag.Message = "Le wiki pour tout savoir sur ce jeu !";
 
             return View();
         }
